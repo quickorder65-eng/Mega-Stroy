@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ремонт и отделка под ключ. Прозрачная смета, фиксированные сроки, контроль качества на каждом этапе.">
+  <title>СтройМастер — Ремонт и отделка под ключ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">◆</span>
+        <span class="logo__text">Строй<strong>Мастер</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#services"    class="nav__link">Услуги</a>
+        <a href="#calculator"  class="nav__link">Расчёт сметы</a>
+        <a href="#process"     class="nav__link">Этапы работы</a>
+        <a href="#advantages"  class="nav__link">Преимущества</a>
+        <a href="#contacts"    class="nav__link">Контакты</a>
+      </nav>
+
+      <a href="#calculator" class="btn btn--accent header__cta">Рассчитать стоимость</a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content" data-animate>
+          <div class="hero__badge">Работаем с 2015 года · Алматы</div>
+          <h1 class="hero__title">Ремонт под ключ с понятной сметой и контролем каждого этапа</h1>
+          <p class="hero__sub">Рассчитайте примерную стоимость ремонта прямо на сайте и получите консультацию специалиста без лишних звонков.</p>
+
+          <div class="hero__actions">
+            <a href="#calculator" class="btn btn--accent btn--lg">Рассчитать смету</a>
+            <a href="#services"   class="btn btn--ghost btn--lg">Посмотреть услуги</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust-item"><span class="trust-item__icon">✓</span><span>Фиксируем сроки</span></div>
+            <div class="trust-item"><span class="trust-item__icon">✓</span><span>Прозрачная смета</span></div>
+            <div class="trust-item"><span class="trust-item__icon">✓</span><span>Контроль качества</span></div>
+          </div>
+        </div>
+
+        <div class="hero__stats" data-animate>
+          <div class="stat-card">
+            <div class="stat-card__number">8+</div>
+            <div class="stat-card__label">лет на рынке</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">340+</div>
+            <div class="stat-card__label">завершённых объектов</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">97%</div>
+            <div class="stat-card__label">клиентов рекомендуют</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <div class="section-label">Что мы делаем</div>
+          <h2 class="section-title">Полный спектр отделочных работ</h2>
+          <p class="section-sub">Берём объект с нуля до финальной сдачи — квартиры, дома, офисы и коммерческие помещения</p>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card" data-animate>
+            <div class="service-card__icon">🏢</div>
+            <h3 class="service-card__title">Ремонт квартир под ключ</h3>
+            <p class="service-card__text">Берём на себя весь цикл: от демонтажа до чистовой отделки. Вы приходите только на приёмку готовой квартиры.</p>
+            <a href="#calculator" class="service-card__link">Рассчитать стоимость →</a>
+          </div>
+          <div class="service-card" data-animate>
+            <div class="service-card__icon">🏡</div>
+            <h3 class="service-card__title">Ремонт домов</h3>
+            <p class="service-card__text">Частные дома любой площади. Работаем с загородными объектами, учитываем особенности каждого проекта.</p>
+            <a href="#calculator" class="service-card__link">Рассчитать стоимость →</a>
+          </div>
+          <div class="service-card" data-animate>
+            <div class="service-card__icon">✏️</div>
+            <h3 class="service-card__title">Дизайн интерьера</h3>
+            <p class="service-card__text">3D-визуализация и дизайн-проект перед стартом работ. Чётко понимаете результат ещё до начала ремонта.</p>
+            <a href="#calculator" class="service-card__link">Рассчитать стоимость →</a>
+          </div>
+          <div class="service-card" data-animate>
+            <div class="service-card__icon">🔧</div>
+            <h3 class="service-card__title">Черновая отделка</h3>
+            <p class="service-card__text">Штукатурка, стяжка, электрика, сантехника. Подготовим основание для любого финишного покрытия.</p>
+            <a href="#calculator" class="service-card__link">Рассчитать стоимость →</a>
+          </div>
+          <div class="service-card" data-animate>
+            <div class="service-card__icon">🎨</div>
+            <h3 class="service-card__title">Чистовая отделка</h3>
+            <p class="service-card__text">Финишные покрытия, укладка плитки и паркета, покраска, установка дверей и сантехнических приборов.</p>
+            <a href="#calculator" class="service-card__link">Рассчитать стоимость →</a>
+          </div>
+          <div class="service-card" data-animate>
+            <div class="service-card__icon">🏪</div>
+            <h3 class="service-card__title">Коммерческие помещения</h3>
+            <p class="service-card__text">Офисы, магазины, кафе и салоны. Ремонт под ключ с учётом бизнес-требований и чётких сроков открытия.</p>
+            <a href="#calculator" class="service-card__link">Рассчитать стоимость →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CALCULATOR ===================== -->
+    <section class="section calculator-section" id="calculator">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <div class="section-label">Онлайн-калькулятор</div>
+          <h2 class="section-title">Рассчитайте примерную стоимость ремонта</h2>
+          <p class="section-sub">Заполните параметры и мгновенно увидите ориентировочную стоимость. Точная смета — после бесплатного замера.</p>
+        </div>
+
+        <div class="calculator__wrap">
+          <!-- LEFT: Calculator form -->
+          <div class="calculator__form-area" data-animate>
+            <form class="calculator__form" id="calculatorForm" novalidate>
+
+              <div class="calc-field">
+                <label class="calc-label">Тип объекта</label>
+                <div class="calc-options calc-options--4" id="objectTypeGroup">
+                  <label class="calc-option">
+                    <input type="radio" name="objectType" value="apartment" checked>
+                    <span class="calc-option__btn">🏢 Квартира</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="objectType" value="house">
+                    <span class="calc-option__btn">🏡 Дом</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="objectType" value="office">
+                    <span class="calc-option__btn">💼 Офис</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="objectType" value="commercial">
+                    <span class="calc-option__btn">🏪 Коммерческое</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label" for="areaInput">Площадь объекта</label>
+                <div class="calc-input-wrap">
+                  <input type="number" id="areaInput" class="calc-input" placeholder="Введите площадь" min="10" max="5000" value="60">
+                  <span class="calc-input__unit">м²</span>
+                </div>
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label">Тип ремонта</label>
+                <div class="calc-options calc-options--4" id="repairTypeGroup">
+                  <label class="calc-option">
+                    <input type="radio" name="repairType" value="cosmetic" checked>
+                    <span class="calc-option__btn">Косметический</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="repairType" value="capital">
+                    <span class="calc-option__btn">Капитальный</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="repairType" value="designer">
+                    <span class="calc-option__btn">Дизайнерский</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="repairType" value="premium">
+                    <span class="calc-option__btn">Премиум</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label">Нужен ли дизайн-проект?</label>
+                <div class="calc-options calc-options--2" id="designProjectGroup">
+                  <label class="calc-option">
+                    <input type="radio" name="designProject" value="yes">
+                    <span class="calc-option__btn">Да, нужен</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="designProject" value="no" checked>
+                    <span class="calc-option__btn">Нет, не нужен</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label">Нужны ли материалы?</label>
+                <div class="calc-options calc-options--3" id="materialsGroup">
+                  <label class="calc-option">
+                    <input type="radio" name="materials" value="work_only" checked>
+                    <span class="calc-option__btn">Только работа</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="materials" value="work_rough">
+                    <span class="calc-option__btn">Работа + черновые</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="materials" value="work_all">
+                    <span class="calc-option__btn">Работа + все</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label">Срочность</label>
+                <div class="calc-options calc-options--2" id="urgencyGroup">
+                  <label class="calc-option">
+                    <input type="radio" name="urgency" value="standard" checked>
+                    <span class="calc-option__btn">Стандартные сроки</span>
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="urgency" value="fast">
+                    <span class="calc-option__btn">Нужно быстрее</span>
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- RIGHT: Result + Lead form -->
+          <div class="calculator__result-area" data-animate>
+
+            <div class="result-card" id="resultCard">
+              <div class="result-card__header">
+                <span class="result-card__label">Примерная стоимость</span>
+                <div class="result-card__price" id="resultTotal">2 100 000 ₸</div>
+                <div class="result-card__per-m" id="resultPerM">35 000 ₸ / м²</div>
+              </div>
+              <div class="result-card__breakdown">
+                <div class="result-card__row">
+                  <span>Площадь:</span>
+                  <span id="resultArea">60 м²</span>
+                </div>
+                <div class="result-card__row">
+                  <span>Тип ремонта:</span>
+                  <span id="resultRepair">Косметический</span>
+                </div>
+                <div class="result-card__row">
+                  <span>Материалы:</span>
+                  <span id="resultMaterials">Только работа</span>
+                </div>
+              </div>
+              <p class="result-card__note">Итоговая стоимость уточняется после замера и обсуждения деталей проекта.</p>
+            </div>
+
+            <!-- LEAD FORM — no popup, directly on page -->
+            <div class="lead-form-wrap" id="leadFormWrap">
+              <h3 class="lead-form__title">Получить точный расчёт</h3>
+              <p class="lead-form__sub">Специалист свяжется с вами и составит детальную смету бесплатно</p>
+
+              <form class="lead-form" id="leadForm" novalidate>
+                <div class="form-field">
+                  <input type="text" id="leadName" name="name" class="form-input" placeholder="Ваше имя" autocomplete="given-name">
+                  <div class="form-error" id="nameError">Введите имя (минимум 2 символа)</div>
+                </div>
+                <div class="form-field">
+                  <input type="tel" id="leadPhone" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+                  <div class="form-error" id="phoneError">Введите корректный номер телефона</div>
+                </div>
+                <div class="form-field">
+                  <textarea id="leadComment" name="comment" class="form-input form-input--textarea" placeholder="Комментарий или пожелания (необязательно)" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--accent btn--full" id="leadSubmit">
+                  <span class="btn__text">Получить точный расчёт</span>
+                  <span class="btn__loader" aria-hidden="true" style="display:none">Отправляем...</span>
+                </button>
+              </form>
+
+              <div class="form-message form-message--success" id="formSuccess" style="display:none">
+                <div class="form-message__icon">✓</div>
+                <div class="form-message__text"><strong>Заявка отправлена.</strong> Специалист свяжется с вами и уточнит все детали.</div>
+              </div>
+
+              <div class="form-message form-message--error" id="formError" style="display:none">
+                <div class="form-message__icon">!</div>
+                <div class="form-message__text">Не удалось отправить заявку. Попробуйте написать нам в <a href="https://wa.me/77001234567" target="_blank" rel="noopener">WhatsApp</a>.</div>
+              </div>
+
+              <div class="form-message form-message--warning" id="formDuplicate" style="display:none">
+                <div class="form-message__icon">i</div>
+                <div class="form-message__text">Вы уже отправили заявку. Мы свяжемся с вами в ближайшее время.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <div class="section-label">Как мы работаем</div>
+          <h2 class="section-title">6 этапов от заявки до сдачи</h2>
+          <p class="section-sub">Чёткий процесс без сюрпризов — вы знаете, что происходит на каждом шаге</p>
+        </div>
+
+        <div class="process__steps">
+          <div class="process-step" data-animate>
+            <div class="process-step__num">01</div>
+            <h3 class="process-step__title">Заявка и консультация</h3>
+            <p class="process-step__text">Принимаем заявку, перезваниваем в течение 30 минут. Обсуждаем объём работ и ваши пожелания.</p>
+          </div>
+          <div class="process-step" data-animate>
+            <div class="process-step__num">02</div>
+            <h3 class="process-step__title">Замер и уточнение задач</h3>
+            <p class="process-step__text">Выезжаем на объект, делаем точные замеры, фиксируем все детали и нюансы будущего ремонта.</p>
+          </div>
+          <div class="process-step" data-animate>
+            <div class="process-step__num">03</div>
+            <h3 class="process-step__title">Подготовка сметы</h3>
+            <p class="process-step__text">Составляем детальную смету с разбивкой по видам работ. Никаких скрытых платежей и неожиданных доплат.</p>
+          </div>
+          <div class="process-step" data-animate>
+            <div class="process-step__num">04</div>
+            <h3 class="process-step__title">Договор и график работ</h3>
+            <p class="process-step__text">Заключаем официальный договор, фиксируем сроки и стоимость. График работ остаётся у вас.</p>
+          </div>
+          <div class="process-step" data-animate>
+            <div class="process-step__num">05</div>
+            <h3 class="process-step__title">Ремонт и контроль качества</h3>
+            <p class="process-step__text">Выполняем работы строго по смете. Регулярно отправляем фото и видео отчёты по каждому этапу.</p>
+          </div>
+          <div class="process-step" data-animate>
+            <div class="process-step__num">06</div>
+            <h3 class="process-step__title">Сдача объекта</h3>
+            <p class="process-step__text">Принимаем объект вместе с вами. Устраняем все замечания до подписания акта приёмки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ADVANTAGES ===================== -->
+    <section class="section advantages" id="advantages">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <div class="section-label">Почему выбирают нас</div>
+          <h2 class="section-title">Наши преимущества</h2>
+          <p class="section-sub">Мы строим долгосрочную репутацию — каждый объект это наш портфолио</p>
+        </div>
+
+        <div class="advantages__grid">
+          <div class="adv-card" data-animate>
+            <div class="adv-card__icon">📋</div>
+            <h3 class="adv-card__title">Прозрачная смета без скрытых платежей</h3>
+            <p class="adv-card__text">Детальная смета с разбивкой по каждому виду работ. Цена фиксируется в договоре — никаких доплат «по ходу».</p>
+          </div>
+          <div class="adv-card" data-animate>
+            <div class="adv-card__icon">📸</div>
+            <h3 class="adv-card__title">Фото/видео отчёт по этапам</h3>
+            <p class="adv-card__text">Регулярно присылаем фотографии и видео с объекта. Контролируйте процесс ремонта удалённо.</p>
+          </div>
+          <div class="adv-card" data-animate>
+            <div class="adv-card__icon">📄</div>
+            <h3 class="adv-card__title">Работаем по договору</h3>
+            <p class="adv-card__text">Официальный договор с фиксированной стоимостью, сроками выполнения и ответственностью сторон.</p>
+          </div>
+          <div class="adv-card" data-animate>
+            <div class="adv-card__icon">🛒</div>
+            <h3 class="adv-card__title">Помогаем с подбором материалов</h3>
+            <p class="adv-card__text">Работаем с проверенными поставщиками. Помогаем выбрать материалы под бюджет и закупить со скидкой.</p>
+          </div>
+          <div class="adv-card" data-animate>
+            <div class="adv-card__icon">🗓️</div>
+            <h3 class="adv-card__title">Соблюдаем сроки</h3>
+            <p class="adv-card__text">Сроки прописаны в договоре. За нарушение сроков по нашей вине предусмотрена договорная неустойка.</p>
+          </div>
+          <div class="adv-card" data-animate>
+            <div class="adv-card__icon">🔍</div>
+            <h3 class="adv-card__title">Контроль качества перед сдачей</h3>
+            <p class="adv-card__text">Проверяем каждый этап перед переходом к следующему. Сдаём объект только после финального осмотра.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CASES ===================== -->
+    <section class="section cases" id="cases">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <div class="section-label">Примеры работ</div>
+          <h2 class="section-title">Примеры оформления кейсов</h2>
+          <p class="section-sub">Демонстрационные карточки — реальные объекты добавляются с разрешения клиентов</p>
+        </div>
+
+        <div class="cases__grid">
+          <div class="case-card" data-animate>
+            <div class="case-card__visual case-card__visual--1">
+              <span class="case-card__tag">Квартира</span>
+            </div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Квартира 72 м² — капитальный ремонт</h3>
+              <div class="case-card__meta">
+                <span>📐 72 м²</span>
+                <span>⏱ 3 месяца</span>
+                <span>🔧 Капитальный</span>
+              </div>
+              <p class="case-card__text">Полный цикл работ: демонтаж, чёрная и белая отделка, монтаж сантехники, электрики и напольных покрытий.</p>
+            </div>
+          </div>
+
+          <div class="case-card" data-animate>
+            <div class="case-card__visual case-card__visual--2">
+              <span class="case-card__tag">Дом</span>
+            </div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Дом 140 м² — ремонт под ключ</h3>
+              <div class="case-card__meta">
+                <span>📐 140 м²</span>
+                <span>⏱ 5 месяцев</span>
+                <span>🔧 Дизайнерский</span>
+              </div>
+              <p class="case-card__text">Загородный дом с авторским дизайн-проектом. Материалы класса премиум, внутренняя разводка инженерных систем.</p>
+            </div>
+          </div>
+
+          <div class="case-card" data-animate>
+            <div class="case-card__visual case-card__visual--3">
+              <span class="case-card__tag">Офис</span>
+            </div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Офис 95 м² — коммерческий ремонт</h3>
+              <div class="case-card__meta">
+                <span>📐 95 м²</span>
+                <span>⏱ 6 недель</span>
+                <span>🔧 Коммерческий</span>
+              </div>
+              <p class="case-card__text">Офис в бизнес-центре. Перепланировка, чистовая отделка, монтаж перегородок и системы освещения.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <div class="section-label">Вопросы и ответы</div>
+          <h2 class="section-title">Часто задаваемые вопросы</h2>
+        </div>
+
+        <div class="faq__list" id="faqList">
+          <div class="faq-item" data-animate>
+            <button class="faq-item__q" aria-expanded="false">
+              Можно ли узнать точную стоимость без замера?
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__a" role="region">
+              <p>Точную стоимость можно определить только после выезда специалиста на объект и замеров. Онлайн-калькулятор на нашем сайте даёт ориентировочную оценку — реальная цена может отличаться на 10–20% в зависимости от состояния помещения и деталей задания. Замер бесплатный.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-animate>
+            <button class="faq-item__q" aria-expanded="false">
+              Сколько длится ремонт?
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__a" role="region">
+              <p>Зависит от объёма работ. Косметический ремонт квартиры 50–70 м² занимает 3–5 недель. Капитальный ремонт — от 2 до 4 месяцев. Дом или коммерческое помещение — от 3 до 6 месяцев. Точные сроки фиксируем в договоре и строго их соблюдаем.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-animate>
+            <button class="faq-item__q" aria-expanded="false">
+              Можно ли работать поэтапно?
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__a" role="region">
+              <p>Да, мы можем разбить проект на этапы с поэтапной оплатой. Однако ремонт под ключ всегда выгоднее, чем отдельные этапы — мы даём скидку и несём ответственность за общий результат.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-animate>
+            <button class="faq-item__q" aria-expanded="false">
+              Помогаете ли вы с материалами?
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__a" role="region">
+              <p>Да. Мы работаем с проверенными поставщиками и получаем скидку до 15–20%. Можем взять закупку материалов на себя полностью — вы согласовываете выбор. Или закупаете сами по нашему подробному списку.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-animate>
+            <button class="faq-item__q" aria-expanded="false">
+              Можно ли контролировать процесс удалённо?
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__a" role="region">
+              <p>Да. Мы регулярно отправляем фото и видео с объекта. По договорённости устанавливаем камеру на объекте. Вы также всегда можете приехать — доступ открыт для заказчика в рабочее время.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-animate>
+            <button class="faq-item__q" aria-expanded="false">
+              Что входит в смету?
+              <span class="faq-item__arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-item__a" role="region">
+              <p>В смету входят: все виды работ (демонтаж, черновая и чистовая отделка, монтаж), стоимость материалов (если включены), вывоз строительного мусора, доставка материалов. Ничего сверх этого — никаких «неожиданных» платежей в процессе работ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTS ===================== -->
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__info" data-animate>
+            <div class="section-label">Свяжитесь с нами</div>
+            <h2 class="section-title">Готовы обсудить ваш проект</h2>
+            <p class="section-sub">Оставьте заявку или свяжитесь удобным способом — ответим в течение 30 минут</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-item__icon">📞</div>
+                <div>
+                  <div class="contact-item__label">Телефон</div>
+                  <a href="tel:+77001234567" class="contact-item__value">+7 (700) 123-45-67</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">🕐</div>
+                <div>
+                  <div class="contact-item__label">Режим работы</div>
+                  <div class="contact-item__value">Пн–Вс: 09:00 — 20:00</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">📍</div>
+                <div>
+                  <div class="contact-item__label">Работаем в городе</div>
+                  <div class="contact-item__value">Алматы и пригород</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://wa.me/77001234567" class="btn btn--wa" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="https://instagram.com/" class="btn btn--insta" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+
+          <div class="contacts__cta" data-animate>
+            <div class="cta-box">
+              <div class="cta-box__accent-line" aria-hidden="true"></div>
+              <h3 class="cta-box__title">Получите бесплатную консультацию</h3>
+              <p class="cta-box__text">Рассчитайте стоимость прямо сейчас — это займёт меньше минуты</p>
+              <a href="#calculator" class="btn btn--accent btn--lg">Рассчитать стоимость</a>
+              <p class="cta-box__note">Выезд на замер — бесплатно</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__icon">◆</span>
+          <span class="logo__text">Строй<strong>Мастер</strong></span>
+        </a>
+        <p class="footer__desc">Ремонт и отделка под ключ. Работаем с квартирами, домами, офисами и коммерческими помещениями в Алматы.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <h4 class="footer__nav-title">Навигация</h4>
+        <a href="#services"   class="footer__link">Услуги</a>
+        <a href="#calculator" class="footer__link">Расчёт сметы</a>
+        <a href="#process"    class="footer__link">Этапы работы</a>
+        <a href="#advantages" class="footer__link">Преимущества</a>
+        <a href="#faq"        class="footer__link">Вопросы и ответы</a>
+        <a href="#contacts"   class="footer__link">Контакты</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <h4 class="footer__nav-title">Контакты</h4>
+        <a href="tel:+77001234567"           class="footer__link">+7 (700) 123-45-67</a>
+        <a href="https://wa.me/77001234567"  class="footer__link" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/"     class="footer__link" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__hours">Пн–Вс: 09:00 — 20:00</span>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2025 СтройМастер. Все права защищены.</p>
+        <p class="footer__privacy">Оставляя заявку, вы соглашаетесь с политикой обработки персональных данных.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
